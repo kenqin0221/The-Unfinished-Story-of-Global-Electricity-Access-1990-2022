@@ -4,7 +4,7 @@
 
 A data visualization report by **Ken Qin** **Zizheng Wang**· Georgetown University · DSAN program · Spring 2026
 
-**Live site:** https://kenqin0221.georgetown.domains/
+**Live site:** https://kenqin0221.georgetown.domains/site/index_electricity.html
 
 ---
 
