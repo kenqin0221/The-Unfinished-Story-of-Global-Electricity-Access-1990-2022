@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wired World: Global Electricity Access 1990–2022</title>
+    <meta
+      name="description"
+      content="A data-driven analysis of global electricity access from 1990 to 2022, examining regional divergence, national case studies, and pathways to universal access."
+    />
+    <link rel="stylesheet" href="style_electricity.css?v=20260427d" />
+  </head>
+  <body>
+    <!-- REPORT HEADER -->
+    <header class="report-header">
+      <div class="header-inner">
+        <img
+          src="assets/georgetown-seal.png"
+          alt="Georgetown University seal"
+          class="header-seal"
+        />
+        <p class="header-meta">Georgetown University · DSAN Program · 2026</p>
+        <h1 class="header-title">Wired World</h1>
+        <p class="header-subtitle">
+          The unfinished story of global electricity access, 1990–2022.
+        </p>
+      </div>
+    </header>
+
+    <!-- PULL QUOTE -->
+    <section class="hero-quote">
+      <p class="quote-mark">→</p>
+      <p class="quote-text">
+        Six&nbsp;hundred and seventy-five&nbsp;million people still live without
+        electricity. Most of them live in&nbsp;one&nbsp;region.
+      </p>
+      <p class="quote-attribution">
+        Sub-Saharan Africa accounts for roughly 85% of the global access gap
+        (World Bank / IEA, 2022).
+      </p>
+    </section>
+
+    <!-- AUTHOR'S NOTE  -->
+    <section class="author-note">
+      <p class="author-eyebrow">A note from the author</p>
+      <p class="author-body">
+        We all know that the electricity is super important nowadays not only
+        for convenience, but also in lots of other areas in terms of healthcare,
+        technology, food etc. Moreover, the power or electricity plays a more
+        vital role in the society that the AI infrastructure needs lots more
+        power than ever. Therefore, we want to use this project to draw
+        attentions from our audiences to pay more attention that there might
+        have some people around the world that cannot even use the electricity
+        in their lives.
+      </p>
+      <p class="author-signature">— Ken Qin, Zizheng Wang</p>
+    </section>
+
+    <nav class="toc-bar" aria-label="Report sections">
+      <div class="toc-inner">
+        <a href="#abstract">Abstract</a>
+        <a href="#overview">sec 1. Regional Overview</a>
+        <a href="#narrative">Sec 2. Narrative Analysis</a>
+        <a href="#country-snapshot">Sec 3. Country Snapshot</a>
+        <a href="#explorer">Sec 4. Country Explorer</a>
+        <a href="#linked">Sec 5. GDP &amp; Access</a>
+        <a href="#pathways">Sec 6. Pathways</a>
+        <a href="#findings">Sec 7. Key Findings</a>
+        <a href="#methodology">Methodology</a>
+        <a href="#ai-usage">AI Log</a>
+      </div>
+    </nav>
+
+    <!-- ABSTRACT -->
+    <section class="report-section" id="abstract">
+      <div class="prose">
+        <p class="section-label">Abstract</p>
+        <div class="section-rule"></div>
+        <h2>
+          Access to electricity remains one of the most consequential and
+          unresolved development challenges in 21st century especially in the
+          era of AI.
+        </h2>
+
+        <p>
+          This report analyzes the electricity access across five world regions
+          and nine major countries between 1990s and 2022. This analysis uses
+          the household-level access data from the World Bank World Development
+          Indicators (indicator <em>EG.ELC.ACCS.ZS</em>) compiled by Our World
+          in Data. Based on the data and our analysis, we have some interesting
+          findings that the development or the electricity is pretty not equally
+          developed: East Asia and Pacific achieved near-universal access by
+          2020 largely through China's national electricity development
+          campaigns. South Asia compressed a generation of infrastructure
+          development into a single decade through India's SAUBHAGYA scheme and
+          Bangladesh's rural cooperative model. However, Sub-Saharan Africa
+          which includes lots of people still have no reach to electricity. The
+          data shows that they gained only 23 percentage points more between
+          1996 and 2022, which shows the significant stagnation in development
+          in the area.
+        </p>
+
+        <div class="callout">
+          <strong>Key finding:</strong> Even at the level of accelerated
+          post-2015 pace of progress in Sub-Saharan Africa, the region will
+          reach only about 62% access by 2030 — well short of the UN Sustainable
+          Development Goal in electricity reachness at that time.
+        </div>
+
+        <p>
+          Our website is orgnized as followed and you can scroll the website by
+          yourself to find some more interesing things: Section 1 presents a
+          comparative overview of regional path. Section 2 provides a more
+          interactive way to analysis of six inflection points in the global
+          electrification story. Section 3 presents a static cross-country
+          ranking as of 2022. Sections 4 and 5 offer interactive tools for users
+          to explore as they want including a combined view connecting GDP per
+          capita to electrification trajectories. Section 6 synthesizes findings
+          into an infographic framework of four pathways to universal access.
+          Section 7 states key conclusions and policy implications.
+        </p>
+      </div>
+    </section>
+
+    <!-- sec1 STATIC VIZ 1 — REGIONAL OVERVIEW -->
+    <div class="alt-bg" id="overview">
+      <section class="report-section">
+        <p class="section-label">Section 1 — Static Visualization</p>
+        <div class="section-rule"></div>
+        <h2>
+          Regional Overview: Five Trajectories, Earliest Available to 2022
+        </h2>
+        <div class="prose">
+          <p>
+            The five charts help the user to identify the electricity
+            development trajectory of each region taht is tracked in this
+            analysis. From each region's earliest World Bank observation through
+            2022, each graph has the same y-axis scale, enabling direct
+            comparison of both the level and pace of change across regions. The
+            figure illustrates the huge convergence in East Asia and the
+            stagnation in Sub-Saharan Africa.
+          </p>
+        </div>
+
+        <div class="figure-wrap" style="margin-top: 1.5rem">
+          <div class="figure-hdr">
+            <span class="figure-num">Figure 1</span>
+            <span class="figure-title"
+              >Share of population with access to electricity, by region</span
+            >
+          </div>
+          <div style="padding: 1rem 1.3rem 0.3rem">
+            <div id="small-multiples" class="small-multiples"></div>
+          </div>
+          <div class="figure-caption">
+            <strong>Source:</strong> World Bank World Development Indicators
+            (EG.ELC.ACCS.ZS) via Our World in Data. Regional series begin in the
+            year of each region's earliest observation.
+          </div>
+        </div>
+
+        <div class="prose" style="margin-top: 1.5rem">
+          <p>
+            From the above graphs, we can conclude that the Latin America and
+            the East Asia have fundamentally good level of infrastructure. They
+            already have considerable level of reach to the electricity and
+            achieve pretty high access rates by the 2010s. Moreover, we can
+            observe there's a steep upward curve after 2010 for the South Asia,
+            which indicates one of the most rapid electricity efforts in
+            development history. Then, there is a totally different story for
+            the Sub-Saharan Africa. The line presents a slow and shallow slope
+            indicating the region is not accelerating its development despite
+            the potential policy and development assistance.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- SEC2. SCROLLYTELLING NARRATIVE -->
+    <section class="report-section" id="narrative" style="padding-bottom: 0">
+      <p class="section-label">Section 2 — Scrollytelling Narrative</p>
+      <div class="section-rule"></div>
+      <h2>Six Inflection Points in the Global Electricity Story</h2>
+      <div class="prose">
+        <p>
+          For this section, we want to have more interactive visualization for
+          the users to trace some key moments and transitions in the global
+          development by using the electricity as a trigger. The users can
+          scroll down the site and the chart will hightlight the relevant series
+          and year, enabling comparison between context and underlying data.
+        </p>
+      </div>
+    </section>
+
+    <div class="scrolly-wrap">
+      <!-- Sticky chart -->
+      <div class="chart-sticky">
+        <div class="chart-frame">
+          <div class="chart-frame-hdr">
+            <div class="chart-frame-num">
+              Figure 2 · Interactive Scroll Visualization
+            </div>
+            <div class="chart-frame-title">
+              Share of population with access to electricity (%) · early 1990s
+              to 2022
+            </div>
+          </div>
+          <div id="scrolly-chart"></div>
+          <div id="scrolly-legend" class="scrolly-legend"></div>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="steps-col">
+        <div id="scroll-steps"></div>
+      </div>
+    </div>
+
+    <div class="report-section" style="padding-top: 1.5rem; border-top: none">
+      <div class="prose">
+        <p>
+          The visualization above show that the electrification is not a
+          independent process of development for any country. It has the
+          clustering effect for regions. This indicates that the electrification
+          is also not a simple process but shaped by geography, governance,
+          finance and political will. The most important predictor of
+          electrification showed by the graphs is the state commitment, which is
+          expressed by national grid program, rural electrification bodies. and
+          enabling regulation for power generation assembly deployment etc.
+        </p>
+      </div>
+    </div>
+
+    <!-- SEC3 STATIC VIZ 2 — COUNTRY SNAPSHOT BAR CHART -->
+    <div class="alt-bg" id="country-snapshot">
+      <section class="report-section">
+        <p class="section-label">Section 3 — Static Visualization</p>
+        <div class="section-rule"></div>
+        <h2>
+          Country Snapshot: Electricity Access in 2022 vs. Early-1990s Baseline
+        </h2>
+        <div class="prose">
+          <p>
+            The graphs below show the ranks of nine major countries that we
+            focused on by 2022. The graphs show that each country's earliest
+            avalable World Bank observation which we use it as the baseline. The
+            gap between the bars indicates the access rate progression of
+            electricity. Wider gap indicates more progress or more development.
+            Narrow gap shows less progression. The Nigeria shows the development
+            investment has been least effective at translating into household
+            level access.
+          </p>
+        </div>
+
+        <div class="figure-wrap" style="margin-top: 1.5rem">
+          <div class="figure-hdr">
+            <span class="figure-num">Figure 3</span>
+            <span class="figure-title"
+              >Electricity access rate by country — 2022 (with early-1990s
+              baseline overlay)</span
+            >
+          </div>
+          <div class="figure-body" style="padding: 1rem 1.3rem 0.5rem">
+            <div id="bar-chart" style="width: 100%"></div>
+          </div>
+          <div class="figure-caption">
+            <strong>Source:</strong> World Bank WDI (EG.ELC.ACCS.ZS). Lighter
+            bar = earliest available WB observation, darker bar = 2022 value.
+            Countries sorted ascending by 2022 access rate. China reached the
+            100% threshold by 2014.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Sec 4. INTERACTIVE 1 — COUNTRY EXPLORER -->
+    <section class="report-section" id="explorer">
+      <p class="section-label">Section 4 — Interactive Visualization</p>
+      <div class="section-rule"></div>
+      <h2>Country Trajectory Explorer</h2>
+      <div class="prose">
+        <p>
+          The visualization below allows the user to interact with it to select
+          the combination of nine countries and compare the level of
+          electrification on the same time axis. Users can also hover on the
+          line to see the actual data for more precise valuse. This
+          visualization help the users to focus on the countries of their own
+          interests and construct their own interested comparisons. For example,
+          they can contraste India and Nigeria as large-population countries on
+          diverging trajectories, or grouping East African nations to see the
+          development within the region.
+        </p>
+      </div>
+
+      <div class="figure-wrap" style="margin-top: 1.5rem">
+        <div class="figure-hdr">
+          <span class="figure-num">Figure 4 · Interactive</span>
+          <span class="figure-title"
+            >Country electricity access trajectories, earliest available to 2022
+            — select countries to display</span
+          >
+        </div>
+        <div class="viz-controls" id="explorer-btns">
+          <span class="viz-controls-label">Toggle countries:</span>
+        </div>
+        <div
+          class="figure-body"
+          id="explorer-wrap"
+          style="padding: 0.8rem 1.3rem 0.5rem"
+        >
+          <div id="explorer-chart" style="width: 100%"></div>
+        </div>
+        <div class="figure-caption">
+          Hover over the chart area to read annual values for all selected
+          countries. Use the toggle buttons to add or remove countries from the
+          comparison.
+          <strong>Reset</strong> returns to the default five-country view.
+        </div>
+      </div>
+    </section>
+
+    <!-- Sec 5. INTERACTIVE 2 + LINKED VIEW — GDP × Access -->
+    <div class="alt-bg" id="linked">
+      <section class="report-section">
+        <p class="section-label">Section 5 — Interactive Linked View</p>
+        <div class="section-rule"></div>
+        <h2>GDP Per Capita and Electricity Access: A Linked View</h2>
+        <div class="prose">
+          <p>
+            The scatter plot also helps users to have more interactive things
+            with the data. It maps the approximate 2022 GDP or each focus
+            country against its 2022 electricity acess rate. This can revewl the
+            relationship between income and the electrification. Users can click
+            on any country to load the electrification data of that country and
+            the plot on the right can reveal how countries at similar income
+            levels can have different electrification history. This can also
+            show how rapidly some countries have been developed with electricity
+            access over time.
+          </p>
+        </div>
+
+        <div class="figure-wrap" style="margin-top: 1.5rem">
+          <div class="figure-hdr">
+            <span class="figure-num">Figure 5 · Linked View</span>
+            <span class="figure-title"
+              >GDP per capita vs. electricity access (2022) — click a dot to
+              reveal trajectory</span
+            >
+          </div>
+          <div class="linked-grid">
+            <div class="linked-panel">
+              <div class="linked-panel-hdr">
+                Scatter: GDP per capita vs. access rate (2022)
+              </div>
+              <div
+                id="scatter-panel"
+                style="padding: 0.6rem 0.8rem; width: 100%"
+              ></div>
+              <p
+                style="
+                  font-family: var(--font-sans);
+                  font-size: 0.73rem;
+                  color: var(--slate-lt);
+                  text-align: center;
+                  padding: 0.4rem 0.8rem 0.6rem;
+                  font-style: italic;
+                "
+              >
+                Click any country dot to load its full trajectory →
+              </p>
+            </div>
+            <div class="linked-panel">
+              <div class="linked-panel-hdr">
+                Timeline: electricity access (earliest available to 2022)
+                <span class="selected-label" id="selected-country-label"
+                  >— select a country</span
+                >
+              </div>
+              <div
+                id="timeline-panel"
+                style="padding: 0.6rem 0.8rem; width: 100%"
+              ></div>
+            </div>
+          </div>
+          <div class="figure-caption">
+            <strong>Interaction:</strong> Clicking a country in the scatter plot
+            loads its full WB-available time series in the right panel. GDP per
+            capita values are approximate 2022 estimates in constant USD,
+            sourced from World Bank national accounts data.
+          </div>
+        </div>
+
+        <div class="prose" style="margin-top: 1.5rem">
+          <p>
+            From the scatter plot, we can conclude that techniquelly, the higher
+            income is associated with higher electricity access, but the income
+            alone is not the deterministic factor to determine electrification
+            outcomes. For example, the Bangladesh has GDP per capita of $1,800
+            has achieved 99.4% access higher than the Nigeria which has more GDP
+            per-capita income of $2,250. This indicate that although there's a
+            correlation between the income and the eletrification, there are
+            some more factors affecting the access rate like the policy design
+            and government.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sec 6. INFOGRAPHIC — 4 PATHWAYS -->
+    <section class="report-section" id="pathways">
+      <p class="section-label">Section 6 — Infographic</p>
+      <div class="section-rule"></div>
+      <h2>Four Pathways to Universal Electricity Access</h2>
+      <div class="prose">
+        <p>
+          The countries showed in this report are not the product of a single
+          mechanism. The graph below showed these kind of connections into four
+          pathways through countries and regions have achieved electrification
+          gains. These pathways along with illustrative country examples and
+          estimated share of total new connections globally attributable to each
+          pathway.
+        </p>
+      </div>
+
+      <div class="figure-wrap" style="margin-top: 1.5rem">
+        <div class="figure-hdr">
+          <span class="figure-num">Figure 6 · Infographic</span>
+          <span class="figure-title"
+            >Four pathways to universal electricity access — mechanisms,
+            examples, and estimated contribution</span
+          >
+        </div>
+        <div class="infographic-body">
+          <div
+            id="infographic-svg-mount"
+            style="width: 100%; overflow-x: auto"
+          ></div>
+        </div>
+        <div class="figure-caption">
+          Pathway share estimates are approximate, based on IEA
+          <em>World Energy Outlook 2023</em> and World Bank
+          <em>Tracking SDG7: The Energy Progress Report 2023</em>. In practice,
+          electrification programs typically combine multiple pathways. The
+          categories represent the dominant mechanism for a given connection.
+        </div>
+      </div>
+    </section>
+
+    <!-- Sec 7. KEY FINDINGS -->
+    <div class="alt-bg" id="findings">
+      <section class="report-section">
+        <p class="section-label">Section 7 — Key Findings</p>
+        <div class="section-rule"></div>
+        <h2>Key Findings and Policy Implications</h2>
+
+        <div class="findings-grid">
+          <div class="finding">
+            <div class="finding-num">+53 pp</div>
+            <div class="finding-lbl">South Asia progress, 1993–2022</div>
+            <p>
+              South Asia has the fastest development speed in regional
+              electrification in the dataset. This is mainly driven by the India
+              and Bangladesh. The development makes the access rate jumps from
+              46.6% in 1993 to 99.1% in 2022, which demonstrates the rapid
+              population-scale electrification is achieved with sustained
+              political commitment and ecnomic growth.
+            </p>
+          </div>
+          <div class="finding">
+            <div class="finding-num">100%</div>
+            <div class="finding-lbl">China's electrification rate, 2014</div>
+            <p>
+              China achieved 100% of household electrification by 2014,
+              increased from 96.7% in 2000. This can be caused by the Rural
+              Power Grid construction and upgrading programs, which connected
+              hundreds of millions of rural residents from the 2000 to 2014.
+              This indicates the largest single country electrification
+              achievement in history.
+            </p>
+          </div>
+          <div class="finding">
+            <div class="finding-num">+23 pp</div>
+            <div class="finding-lbl">
+              Sub-Saharan Africa progress, 1996–2022
+            </div>
+            <p>
+              In the analysis, we can see a outlier among the countries and
+              regions. The Sub-Saharan Africa gained 23% of access rate between
+              1996 to 2022 with the number from 28.5% to 51.6%. There are some
+              notable move between 1996 and 2000 as broder country coverage and
+              population growth, but the region still accounts for roughly 85%
+              of the global electricity gap.
+            </p>
+          </div>
+          <div class="finding">
+            <div class="finding-num">2030</div>
+            <div class="finding-lbl">
+              SDG 7 deadline — current trajectory falls short
+            </div>
+            <p>
+              The Sub-Saharan Africa will reach only 62% of access rate by 2030
+              even if they can have the accelerated post 2015 rate of about 1.5%
+              per year, which is far behind the UN SDG 7 universal access
+              target. This will require roughly doubling the current pace from
+              1.5-3.0%, which indicates the financial challenges on the order of
+              30-40 billion per year above current investment level.
+            </p>
+          </div>
+        </div>
+
+        <div class="prose" style="margin-top: 1.5rem">
+          <p>
+            From the findings above, we can conclude some key insights from
+            them. The evidence from the South Asia and East Africa shows that
+            the rapid electrification is achievable at scale with the help of
+            goverments. If the governments can makeit to political priority with
+            proper financial mechanisms. Moreover, the gap in Sub-Saharan Africa
+            is not caused by technology problem because the off-grid solar is
+            now cost competitive but the financial and government problem, which
+            requires new models for rist sharing between public and private
+            sectors. Then, the divergence between countries at similar income
+            leveles like Bangladesh and Nigeria implicate that the
+            electrification outcomes is not only depend on the GDP or the
+            ecnomic growth but should depend on some more complex reasons like
+            the institutional quality and policy design.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- METHODOLOGY & SOURCES -->
+    <section class="report-section" id="methodology">
+      <div class="prose">
+        <p class="section-label">Methodology &amp; Data Sources</p>
+        <div class="section-rule"></div>
+        <h2>Methodology</h2>
+        <p>
+          All of the figures and graphs showed in this website are constructed
+          from the World Bank's definition that the percentage of a country's
+          population with access to electricity. It is reported through the
+          household surveys and utility converage estimates because there's no
+          way to collect the 100% precise data from different countries. The
+          primary data source is the World Bank World Development Indicators,
+          indicator EG.ELC.ACCS.ZS, accessed via Our World in Data's curated and
+          processed dataset.
+        </p>
+        <p>
+          Regional aggregates (Sub-Saharan Africa, South Asia, East Asia and
+          Pacific, Latin America and Caribbean) are population-weighted averages
+          compiled by the World Bank. GDP per capita figures used in Section 5
+          are approximate 2022 values in constant 2015 USD from World Bank
+          national accounts data and should be treated as indicative rather than
+          precise.
+        </p>
+
+        <h3 style="margin-top: 1.6rem">Baseline year selection</h3>
+        <p>
+          Although this project is framed around the period 1990–2022, the World
+          Bank does not publish some of the 1990 observations for most regional
+          aggregates or for several of the focus countries. Rather than
+          back-extrapolating, we use each entity's
+          <em>earliest real WB observation within the 1990–2000 window</em> as
+          its historical baseline. The specific baseline year is shown in the
+          bar chart tooltip in Section 3 and quoted in narrative findings. For
+          example, South Asia, 46.6% in 1993, World aggregate the earliest WB
+          value is 78.22% in 2000 and for Sub-Saharan Africa it is 28.5% in 1996
+          etc.
+        </p>
+
+        <h3 style="margin-top: 1.6rem">Interpolation</h3>
+        <p>
+          The preprocessing pipeline supports linear interpolation for interior
+          gaps between two adjacent real WB observations, but in the current
+          dataset all 13 displayed years (1990, 1995, 2000, 2005, 2010, 2012,
+          2014, 2016, 2018, 2019, 2020, 2021, 2022) contain only real WB
+          observations — interpolation
+          <code>filled_count</code> is zero. No leading or trailing
+          extrapolation is ever performed. In our code, the missing values
+          outside the observed range remain null and are skipped at render time.
+          The users can go to see <code>scripts/preprocess.py</code> and
+          <code>meta.imputation</code> in the JSON for details.
+        </p>
+
+        <h3 style="margin-top: 1.6rem">Sub-Saharan Africa pace estimates</h3>
+        <p>
+          The "post-2015 pace of 1.5% per year" cited in the abstract and
+          findings is computed as the slope of SSA access between 2015 and 2022,
+          divided by 7 years. The earlier "1996–2015 pace of 0.7% per year" is
+          computed over a 19-year window. Projections to 2030 assume this
+          post-2015 pace continues unchanged.
+        </p>
+
+        <div class="sources-box">
+          <h4>Data Sources</h4>
+          <ul>
+            <li>
+              World Bank World Development Indicators (EG.ELC.ACCS.ZS) —
+              <a
+                href="https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS"
+                target="_blank"
+                >data.worldbank.org</a
+              >
+            </li>
+            <li>
+              Our World in Data Energy Dataset —
+              <a href="https://ourworldindata.org/energy-access" target="_blank"
+                >ourworldindata.org/energy-access</a
+              >
+              · License: CC BY 4.0
+            </li>
+            <li>
+              IEA World Energy Outlook 2023 — pathway estimates in Figure 6
+            </li>
+            <li>
+              World Bank / IEA / IRENA,
+              <em>Tracking SDG7: The Energy Progress Report 2023</em>
+            </li>
+            <li>GOGLA, <em>Off-Grid Solar Market Trends Report 2022</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI USAGE LOG -->
+    <section class="report-section" id="ai-usage">
+      <div class="prose">
+        <p class="section-label">Appendix — AI Usage Log</p>
+        <div class="section-rule"></div>
+        <p>
+          <strong>Note on AI use:</strong> We used Claude (Anthropic's AI
+          assistant) as a reference tool during research and planning, similar
+          to consulting documentation or an online reference. All final writing,
+          code, and analytical decisions reflect our own understanding and
+          judgment. We reviewed, critically evaluated, and substantially
+          modified any AI-generated content to ensure it accurately represented
+          our own thinking and met the specific requirements of this assignment.
+          We wanted to be transparent about this use in the spirit of academic
+          honesty.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>
+        <strong style="color: rgba(255, 255, 255, 0.7)">Wired World</strong> ·
+        Global Electricity Access 1990–2022 · Analysis by Ken Qin, Zizheng Wang
+        · Georgetown University DSAN · 2026
+      </span>
+      <span>
+        Data:
+        <a
+          href="https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS"
+          target="_blank"
+          >World Bank WDI</a
+        >
+        via
+        <a href="https://ourworldindata.org/energy-access" target="_blank"
+          >Our World in Data</a
+        >
+        · CC BY 4.0
+      </span>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="main_electricity.js?v=20260427d"></script>
+  </body>
+</html>

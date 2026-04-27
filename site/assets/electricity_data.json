@@ -1,0 +1,414 @@
+{
+  "meta": {
+    "generated_at": "2026-04-26T22:33:32Z",
+    "sources": [
+      {
+        "name": "World Bank World Development Indicators",
+        "indicator": "EG.ELC.ACCS.ZS — Access to electricity (% of population)",
+        "url": "https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS",
+        "license": "CC BY 4.0",
+        "accessed": "2026-04-26"
+      },
+      {
+        "name": "World Bank World Development Indicators",
+        "indicator": "NY.GDP.PCAP.KD — GDP per capita (constant 2015 US$)",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.KD",
+        "license": "CC BY 4.0",
+        "accessed": "2026-04-26"
+      }
+    ],
+    "regions": [
+      "World",
+      "Sub-Saharan Africa",
+      "South Asia",
+      "East Asia and Pacific",
+      "Latin America and Caribbean"
+    ],
+    "spotlight": {
+      "India": "South Asia riser",
+      "Bangladesh": "South Asia riser",
+      "Pakistan": "South Asia riser",
+      "China": "East Asia success",
+      "Indonesia": "East Asia success",
+      "Brazil": "LAC benchmark",
+      "Kenya": "East Africa riser",
+      "Ethiopia": "East Africa riser",
+      "Nigeria": "West Africa (stalled)"
+    },
+    "years": [
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2012,
+      2014,
+      2016,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "indicator_access": "EG.ELC.ACCS.ZS",
+    "indicator_gdp": "NY.GDP.PCAP.KD",
+    "imputation": {
+      "data_array": {
+        "method": "linear interpolation between adjacent real WB observations",
+        "applies_to": "INTERIOR gaps only — leading/trailing nulls are left as null",
+        "rationale": "Electricity access changes slowly year-to-year, so linear interpolation between two real observations 5 years apart is a defensible estimate matching how WB/IEA report intermediate years. No back- or forward-extrapolation is performed.",
+        "filled_count": 0
+      },
+      "bar_baseline": {
+        "method": "earliest real WB observation per entity, primary window 1990–1995, fallback 1996–2000",
+        "rationale": "Most focus entities lacked a strict 1990 observation in WB. Using the earliest real value within the early-1990s window gives every entity a meaningful 'before' anchor without fabricating data. The actual baseline year per entity is recorded in each bar row's `baseline_year` field."
+      }
+    }
+  },
+  "data": [
+    {
+      "year": 1990,
+      "Brazil": 87.48,
+      "Nigeria": 27.3
+    },
+    {
+      "year": 1995,
+      "South Asia": 47.66,
+      "Latin America and Caribbean": 88.62,
+      "India": 51.41,
+      "Bangladesh": 18.34,
+      "Indonesia": 66.86,
+      "Brazil": 91.73,
+      "Kenya": 5.43,
+      "Nigeria": 38.69
+    },
+    {
+      "year": 2000,
+      "World": 78.22,
+      "Sub-Saharan Africa": 25.7,
+      "South Asia": 56.77,
+      "East Asia and Pacific": 92.06,
+      "Latin America and Caribbean": 91.74,
+      "India": 60.3,
+      "Bangladesh": 32.0,
+      "Pakistan": 72.8,
+      "China": 96.7,
+      "Indonesia": 86.3,
+      "Brazil": 94.4,
+      "Kenya": 15.2,
+      "Ethiopia": 12.7,
+      "Nigeria": 43.2
+    },
+    {
+      "year": 2005,
+      "World": 80.7,
+      "Sub-Saharan Africa": 29.35,
+      "South Asia": 65.85,
+      "East Asia and Pacific": 93.58,
+      "Latin America and Caribbean": 93.52,
+      "India": 68.8,
+      "Bangladesh": 44.2,
+      "Pakistan": 78.1,
+      "China": 97.9,
+      "Indonesia": 84.8,
+      "Brazil": 97.1,
+      "Kenya": 24.5,
+      "Ethiopia": 14.0,
+      "Nigeria": 46.8
+    },
+    {
+      "year": 2010,
+      "World": 83.45,
+      "Sub-Saharan Africa": 33.34,
+      "South Asia": 74.08,
+      "East Asia and Pacific": 95.55,
+      "Latin America and Caribbean": 95.88,
+      "India": 76.3,
+      "Bangladesh": 55.3,
+      "Pakistan": 87.1,
+      "China": 99.7,
+      "Indonesia": 94.2,
+      "Brazil": 98.6,
+      "Kenya": 19.2,
+      "Ethiopia": 25.5,
+      "Nigeria": 48.0
+    },
+    {
+      "year": 2012,
+      "World": 84.94,
+      "Sub-Saharan Africa": 36.78,
+      "South Asia": 78.42,
+      "East Asia and Pacific": 96.21,
+      "Latin America and Caribbean": 96.57,
+      "India": 79.9,
+      "Bangladesh": 65.5,
+      "Pakistan": 88.6,
+      "China": 99.9,
+      "Indonesia": 96.0,
+      "Brazil": 99.5,
+      "Kenya": 38.1,
+      "Ethiopia": 29.0,
+      "Nigeria": 53.0
+    },
+    {
+      "year": 2014,
+      "World": 86.2,
+      "Sub-Saharan Africa": 38.35,
+      "South Asia": 82.85,
+      "East Asia and Pacific": 96.64,
+      "Latin America and Caribbean": 97.05,
+      "India": 85.1,
+      "Bangladesh": 62.4,
+      "Pakistan": 90.1,
+      "China": 100.0,
+      "Indonesia": 97.0,
+      "Brazil": 99.7,
+      "Kenya": 36.0,
+      "Ethiopia": 27.2,
+      "Nigeria": 54.2
+    },
+    {
+      "year": 2016,
+      "World": 88.1,
+      "Sub-Saharan Africa": 43.83,
+      "South Asia": 88.32,
+      "East Asia and Pacific": 97.03,
+      "Latin America and Caribbean": 97.48,
+      "India": 89.6,
+      "Bangladesh": 75.9,
+      "Pakistan": 91.8,
+      "China": 100.0,
+      "Indonesia": 97.6,
+      "Brazil": 99.7,
+      "Kenya": 53.1,
+      "Ethiopia": 42.9,
+      "Nigeria": 59.3
+    },
+    {
+      "year": 2018,
+      "World": 89.8,
+      "Sub-Saharan Africa": 46.42,
+      "South Asia": 94.82,
+      "East Asia and Pacific": 97.66,
+      "Latin America and Caribbean": 97.76,
+      "India": 95.7,
+      "Bangladesh": 86.9,
+      "Pakistan": 93.4,
+      "China": 100.0,
+      "Indonesia": 98.5,
+      "Brazil": 99.7,
+      "Kenya": 61.2,
+      "Ethiopia": 44.8,
+      "Nigeria": 56.5
+    },
+    {
+      "year": 2019,
+      "World": 90.11,
+      "Sub-Saharan Africa": 47.2,
+      "South Asia": 95.47,
+      "East Asia and Pacific": 97.88,
+      "Latin America and Caribbean": 98.0,
+      "India": 95.9,
+      "Bangladesh": 92.2,
+      "Pakistan": 93.9,
+      "China": 100.0,
+      "Indonesia": 98.9,
+      "Brazil": 99.8,
+      "Kenya": 69.7,
+      "Ethiopia": 48.0,
+      "Nigeria": 55.4
+    },
+    {
+      "year": 2020,
+      "World": 90.4,
+      "Sub-Saharan Africa": 48.55,
+      "South Asia": 96.4,
+      "East Asia and Pacific": 97.8,
+      "Latin America and Caribbean": 98.15,
+      "India": 96.5,
+      "Bangladesh": 96.2,
+      "Pakistan": 94.5,
+      "China": 100.0,
+      "Indonesia": 97.0,
+      "Brazil": 99.7,
+      "Kenya": 71.5,
+      "Ethiopia": 51.1,
+      "Nigeria": 55.4
+    },
+    {
+      "year": 2021,
+      "World": 91.33,
+      "Sub-Saharan Africa": 50.66,
+      "South Asia": 99.37,
+      "East Asia and Pacific": 98.15,
+      "Latin America and Caribbean": 98.28,
+      "India": 99.6,
+      "Bangladesh": 99.0,
+      "Pakistan": 94.9,
+      "China": 100.0,
+      "Indonesia": 99.2,
+      "Brazil": 99.5,
+      "Kenya": 76.5,
+      "Ethiopia": 54.2,
+      "Nigeria": 59.5
+    },
+    {
+      "year": 2022,
+      "World": 91.29,
+      "Sub-Saharan Africa": 51.59,
+      "South Asia": 99.09,
+      "East Asia and Pacific": 98.21,
+      "Latin America and Caribbean": 98.58,
+      "India": 99.2,
+      "Bangladesh": 99.4,
+      "Pakistan": 95.0,
+      "China": 100.0,
+      "Indonesia": 100.0,
+      "Brazil": 100.0,
+      "Kenya": 76.0,
+      "Ethiopia": 55.4,
+      "Nigeria": 60.5
+    }
+  ],
+  "bar": [
+    {
+      "country": "Sub-Saharan Africa",
+      "access_baseline": 28.5,
+      "baseline_year": 1996,
+      "access_2022": 51.6
+    },
+    {
+      "country": "Ethiopia",
+      "access_baseline": 12.7,
+      "baseline_year": 2000,
+      "access_2022": 55.4
+    },
+    {
+      "country": "Nigeria",
+      "access_baseline": 27.3,
+      "baseline_year": 1990,
+      "access_2022": 60.5
+    },
+    {
+      "country": "Kenya",
+      "access_baseline": 10.9,
+      "baseline_year": 1993,
+      "access_2022": 76.0
+    },
+    {
+      "country": "World",
+      "access_baseline": 73.2,
+      "baseline_year": 1998,
+      "access_2022": 91.3
+    },
+    {
+      "country": "Pakistan",
+      "access_baseline": 70.5,
+      "baseline_year": 1998,
+      "access_2022": 95.0
+    },
+    {
+      "country": "East Asia and Pacific",
+      "access_baseline": 92.1,
+      "baseline_year": 2000,
+      "access_2022": 98.2
+    },
+    {
+      "country": "Latin America and Caribbean",
+      "access_baseline": 88.7,
+      "baseline_year": 1992,
+      "access_2022": 98.6
+    },
+    {
+      "country": "South Asia",
+      "access_baseline": 46.6,
+      "baseline_year": 1993,
+      "access_2022": 99.1
+    },
+    {
+      "country": "India",
+      "access_baseline": 50.9,
+      "baseline_year": 1993,
+      "access_2022": 99.2
+    },
+    {
+      "country": "Bangladesh",
+      "access_baseline": 14.3,
+      "baseline_year": 1991,
+      "access_2022": 99.4
+    },
+    {
+      "country": "China",
+      "access_baseline": 96.7,
+      "baseline_year": 2000,
+      "access_2022": 100.0
+    },
+    {
+      "country": "Indonesia",
+      "access_baseline": 48.9,
+      "baseline_year": 1991,
+      "access_2022": 100.0
+    },
+    {
+      "country": "Brazil",
+      "access_baseline": 87.5,
+      "baseline_year": 1990,
+      "access_2022": 100.0
+    }
+  ],
+  "scatter": [
+    {
+      "country": "India",
+      "gdp_per_capita": 2098.0,
+      "access_pct": 99.2
+    },
+    {
+      "country": "Bangladesh",
+      "gdp_per_capita": 1804.0,
+      "access_pct": 99.4
+    },
+    {
+      "country": "Pakistan",
+      "gdp_per_capita": 1642.0,
+      "access_pct": 95.0
+    },
+    {
+      "country": "China",
+      "gdp_per_capita": 11831.0,
+      "access_pct": 100.0
+    },
+    {
+      "country": "Indonesia",
+      "gdp_per_capita": 4025.0,
+      "access_pct": 100.0
+    },
+    {
+      "country": "Brazil",
+      "gdp_per_capita": 9032.0,
+      "access_pct": 100.0
+    },
+    {
+      "country": "Kenya",
+      "gdp_per_capita": 1748.0,
+      "access_pct": 76.0
+    },
+    {
+      "country": "Ethiopia",
+      "gdp_per_capita": 811.0,
+      "access_pct": 55.4
+    },
+    {
+      "country": "Nigeria",
+      "gdp_per_capita": 2254.0,
+      "access_pct": 60.5
+    }
+  ],
+  "pop_no_elec": {
+    "Sub-Saharan Africa": 570,
+    "South Asia": 110,
+    "East Asia and Pacific": 15,
+    "Latin America and Caribbean": 20,
+    "World": 675
+  },
+  "imputed": []
+}
