@@ -126,7 +126,7 @@ A few spot-checks against publicly known facts, to show the values are real:
 
 ---
 
-## Try it locally
+## Can Try it locally
 
 The entire `site/` folder is a self-contained bundle of static files: one HTML, one CSS, one JS, one JSON. Total weight: ~104 KB. The only external dependency is D3 v7 from a CDN.
 
@@ -136,9 +136,13 @@ python3 -m http.server 8000
 # then open http://localhost:8000/index_electricity.html
 ```
 
-You need a real HTTP server (not just double-clicking the HTML) because the page loads the JSON via `fetch()`, which browsers block when the page is opened directly from disk.
+---
 
-To deploy: copy the contents of `site/` into your host's public root (e.g., `public_html/` on cPanel-based hosts like Georgetown Domains). That's it — no build step, no server-side code.
+## Deployment
+
+The site is deployed on the Georgetown University student web-hosting server, **Georgetown Domains**, and is publicly available at:
+
+**https://kenqin0221.georgetown.domains/site/index_electricity.html**
 
 ---
 
