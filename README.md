@@ -2,7 +2,7 @@
 
 ### _The Unfinished Story of Global Electricity Access, 1990–2022_
 
-A data visualization report by **Ken Qin** · Georgetown University · DSAN program · Spring 2026
+A data visualization report by **Ken Qin** **Zizheng Wang**· Georgetown University · DSAN program · Spring 2026
 
 **Live site:** https://kenqin0221.georgetown.domains/
 
@@ -176,7 +176,7 @@ final_project/
 
 **Built with** — D3 v7, vanilla JavaScript, Python (pandas + requests), and a lot of patience for stubborn null values.
 
-**Author** — Ken Qin, Georgetown University, Data Science and Analytics program, Spring 2026.
+**Author** — Ken Qin, Zizheng Wang, Georgetown University, Data Science and Analytics program, Spring 2026.
 
 ---
 
