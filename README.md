@@ -2,7 +2,7 @@
 
 ### _The Unfinished Story of Global Electricity Access, 1990–2022_
 
-A data visualization report by **Ken Qin** **Zizheng Wang**· Georgetown University · DSAN program · Spring 2026
+A data visualization report by **Ken Qin** & **Zizheng Wang**· Georgetown University · DSAN program · Spring 2026
 
 **Live site:** https://kenqin0221.georgetown.domains/site/index_electricity.html
 
