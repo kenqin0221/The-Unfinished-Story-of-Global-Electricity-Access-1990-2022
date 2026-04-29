@@ -4,8 +4,9 @@
 
 A data visualization report by **Ken Qin** & **Zizheng Wang**· Georgetown University · DSAN program · Spring 2026
 
-**Live site:** https://kenqin0221.georgetown.domains/site/index_electricity.html
-
+**Live site:** 
+https://kenqin0221.georgetown.domains/site/index_electricity.html
+https://zizhengw.georgetown.domains/site/index_electricity.html 
 ---
 
 ## Why this report exists
@@ -143,6 +144,7 @@ python3 -m http.server 8000
 The site is deployed on the Georgetown University student web-hosting server, **Georgetown Domains**, and is publicly available at:
 
 **https://kenqin0221.georgetown.domains/site/index_electricity.html**
+**https://zizhengw.georgetown.domains/site/index_electricity.html**
 
 ---
 
