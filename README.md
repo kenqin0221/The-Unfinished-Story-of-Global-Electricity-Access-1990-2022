@@ -6,7 +6,6 @@ A data visualization report by **Ken Qin** & **Zizheng Wang**· Georgetown Unive
 
 **Live site:** 
 https://kenqin0221.georgetown.domains/site/index_electricity.html
-https://zizhengw.georgetown.domains/site/index_electricity.html 
 ---
 
 ## Why this report exists
